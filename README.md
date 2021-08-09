@@ -23,7 +23,7 @@ I do agree that mass spamming requests with hundreds of IPs in an attempt to DDO
     <li><a href="#Setup">Setup</a></li>
     <li><a href="#Usage">Usage</a></li>
     <li><a href="#Inspiration">Inspiration</a></li>
-    <li><a href="#CAPTCHA">CAPTCHA</a></li>
+    <li><a href="#The-CAPTCHA-Problem">The CAPTCHA Problem</a></li>
 </ul>
 
 
@@ -114,10 +114,24 @@ print(total_followers)
 
 This should be enough to get you started on incorporating this API into whatever programs you wish to make.
 
-Full documentation is available [here](#)
+<br>
+
+Full documentation available [here](#)
 
 
-I decided to work on this project mainly for myself, because I wanted to see 
+## Inspiration
+
+
+I decided to work on this project mainly for myself, because I wanted to see who the most popular person that followed me on Tiktok was.
+
+Initially, my plan was to write a simple app using the official Tiktok API that just checked the follower count for each of my followers but I soon came to realize that Tiktok had no official API
+
+I had already heard about how it's possible to make API's for websites using a term what's known as [web-scraping](https://en.wikipedia.org/wiki/Web_scraping), however I didn't have any knowledge on the matter.
+I then started doing research and came to the realization that it may be possible for me to try and make one.
+
+I plan to continue updating this as I keep adding more and more features, and learn more about how websites handle data
+
+### The CAPTCHA Problem
 
 
 
