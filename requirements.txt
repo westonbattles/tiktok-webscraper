@@ -1,9 +1,5 @@
 tiktokscraper
 requests
-random
-time
-json
-re
 bs4
 datetime
 unidecode
