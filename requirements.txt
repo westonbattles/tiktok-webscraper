@@ -1,5 +1,0 @@
-tiktokscraper
-requests
-bs4
-datetime
-unidecode
