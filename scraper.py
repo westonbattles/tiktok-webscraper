@@ -5,7 +5,7 @@ import json
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime
-
+from unidecode import unidecode
 
 BASEURL = "https://www.tiktok.com/"
 
@@ -102,6 +102,10 @@ class TiktokAPI():
         user_info = self.get_user_info(user)
         return user_info["user"]['privateAccount']
 
+    def unix_to_datetime(self, unix):
+
+        return datetime.utcfromtimestamp(unix).strftime('%Y-%m-%d %I:%M:%S %p')
+
 
     #Getters
     def get_follower_count(self, user):
@@ -134,6 +138,40 @@ class TiktokAPI():
 
         user_info = self.get_user_info(user)
         return user_info["stats"]['videoCount']
+
+    def get_videos(self, user):
+
+        video_info = []
+
+        if self.account_exists(user) is False:
+            raise Exception("That account does not exist")
+
+        url = BASEURL + user
+        soup = self.soupify(url)
+
+        data = soup.find("script", id="__NEXT_DATA__")
+        jsondata = json.loads(str(data.string))
+
+        video_list = jsondata["props"]["pageProps"]["items"]
+        print(video_list)
+        for video in video_list:
+
+            to_add = {}
+            desc = u'{}'.format(video['desc'])
+            audio_title = u'{}'.format(video['music']['title'])
+            audio_author = u'{}'.format(video['music']['authorName'])
+
+            to_add['link'] = url + "/video/" + video['id']
+            to_add['description'] = unidecode(desc)
+            to_add['video created'] = self.unix_to_datetime(video['createTime']) + " (Unix " + str(video['createTime']) +")"
+            to_add['audio'] = unidecode(audio_title) + " - " + unidecode(audio_author) + " (" + video['music']['playUrl']+")"
+
+
+
+            video_info.append(to_add)
+
+        return json.dumps(video_info, indent=4)
+
 
     def get_uid(self, user):
 
@@ -175,7 +213,7 @@ class TiktokAPI():
         user_info = self.get_user_info(user)
 
         unix = int(user_info["user"]['createTime'])
-        date = datetime.utcfromtimestamp(unix).strftime('%Y-%m-%d %H:%M:%S')
+        date = self.unix_to_datetime(unix)
 
         return user + " account created: " + date + " GMT (Unix: " + str(unix) +")"
 
@@ -189,5 +227,5 @@ class TiktokAPI():
 
 
 Tiktok = TiktokAPI()
-print(Tiktok.example_function("@example_user"))
 
+print(Tiktok.example_function("@example_user"))
