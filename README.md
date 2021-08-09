@@ -1,6 +1,6 @@
 # tiktok-webscraper
 
-Simple webscraping bot that has a set of methods to get specific and general information about a specified user (e.g. follower count, profile picture, etc..)
+Simple webscraping bot that has a set of methods to get specific and general information about a specified user/video (e.g. follower count, like count, etc..)
 
 
 
