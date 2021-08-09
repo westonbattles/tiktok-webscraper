@@ -61,8 +61,60 @@ sudo apt install -y python3 python3-pip
 
 ### Installing the Required Packages
 
+This step is fairly easy, all you're going to want to do is navigate to your command line and copy and paste the following command:
+
+```shell
+pip install tiktokscraper requests bs4 datetime unidecode
+```
+
+then, all you have to do is wait and then the requried packages should be installed and you should be ready for the next step
+
 
 ## Setup
+
+Before you setup your ```.py``` file, I recomend creating a folder named ```Tiktok``` or something else that you'll remember. Make sure it's easily accessible.
+
+Next, navigate to that folder (or whever you decide to put this file) and create a new python file. You can name it whatever you want, for this demonstration we'll call it ```tiktokwebscraper.py```
+
+In this py file, copy and paste the following code in:
+
+```python
+
+from tiktokscraper import scrape
+
+Tiktok = scrape.create()
+
+```
+
+And that's all you need to do to setup your webscraper!
+
+Now do keep in mind that you can use this in any way in your own python scripts, however I just told you to make a new one just for the purposes of this demo.
+
+
+
+## Usage
+
+Whenever you call a function with this scraper (e.g: 
+```python
+Tiktok.get_follwer_count('@example_user')
+```
+the value will be returned to you.
+
+This means that if you want the value to be outputted to the console, you have to print it.
+
+For our example, we'll simply set what gets returned to us into a variable, and print that:
+
+
+
+```python
+total_followers = Tiktok.get_follwer_count('@example_user')
+
+print(total_followers)
+```
+
+This should be enough to get you started on incorporating this API into whatever programs you wish to make.
+
+Full documentation is available [here](#)
 
 
 I decided to work on this project mainly for myself, because I wanted to see 
