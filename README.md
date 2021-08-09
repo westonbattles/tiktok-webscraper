@@ -24,6 +24,7 @@ I do agree that mass spamming requests with hundreds of IPs in an attempt to DDO
     <li><a href="#Usage">Usage</a></li>
     <li><a href="#Inspiration">Inspiration</a></li>
     <li><a href="#The-CAPTCHA-Problem">The CAPTCHA Problem</a></li>
+    <li><a href="#Contact">Contact</a></li>
 </ul>
 
 
@@ -149,3 +150,6 @@ I eventually realized that Tiktok only knows you need to be verified based off o
 A quick google searched reaveled a website with a list of [free proxies](https://free-proxy-list.net/), and I then made the webscraper scrape this list of proxies, add them to a dictionary, and then choose a random one to use as a proxy whenever Tiktok asks for you to complete a CAPTCHA.
 
 This may not be a solution as cool as artifical intelligence, however it's mine and I'm proud of it 
+
+## Contact
+You can email me at westonb.work@gmail.com
