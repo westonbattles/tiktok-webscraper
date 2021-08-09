@@ -1,12 +1,38 @@
 <h1 align="center"> Simple Tiktok Webscraper </h1>
 
-Simple webscraping bot that has a set of methods to get specific and general information about a specified user/video (e.g. follower count, like count, etc..)
+Simple webscraping bot that has a set of methods to get specific and general information about a specified Tiktok user/video (e.g. follower count, like count, etc..)
 
 
 
 ## Overview
 
-When I was coding this bot, I ran into a huge problem, as it turns out Tiktok (A $250 billion dollar company) isn't stupid and if you send a lot of get requests to it's web servers, you will be profiled as a robot and asked to complete a captcha.
+This project was started, mainly as a way for me to practice my webscraping skills and class structure knowledge. I don't expect anyone to download this but I'm still going to write a fully fleshed out README with usage tutorials and everything for completion's sake
+
+Web scraping is a really important tool to learn, even if it's generally fround apon by companies. The problem is humans love data, which means we will stop at nothing to find ways to make data more accessible to us. Webs crapers are no exception.
+
+I do want to preface one thing first though, I have talked to many developers about the morality behind webs scraping, and learned many different opinions on if, ethically, it should be done. It is my belief that due to all of the data being scraped in this project's current publicly accesible state, writing a program that goes through the frontend code to scrape data goes against no moral codes. I do agree that mass spamming requests with hundreds of IPs in an attempt to DDOS, or even just in an attempt to retreive a huge amount of data from a company's servers (especially if the company/servers are smaller) is a blatant violation of said moral codes. However Tiktok is $250 Billion dollar compant and I am a 16 year old with a laptop.
+
+
+## Table of Contents
+
+
+<ul>
+    <li><a href="#Installation">Intallation</a></li>
+    <li><a href="#Setup">Setup</a></li>
+    <li><a href="#Usage">Usage</a></li>
+    <li><a href="#Inspiration">Inspiration</a></li>
+    <li><a href="#CAPTCHA">CAPTCHA</a></li>
+</ul>
+
+
+## Installation
+
+
+I decided to work on this project mainly for myself, because I wanted to see 
+
+
+
+When I was coding this bot I was faced with. as it turns out Tiktok doesn't like it when you pull a lot of data from them, so if you send a lot of get requests to their web servers, you will be profiled as a robot and asked to complete a captcha.
 
 <img src = "https://user-images.githubusercontent.com/50222899/128652952-6a8d19a6-de15-455b-a626-0f3903b47c7d.png">
 
