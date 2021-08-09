@@ -30,6 +30,41 @@ I do agree that mass spamming requests with hundreds of IPs in an attempt to DDO
 ## Installation
 
 
+As usual, first you need to make sure you have Python 3 + pip installed. To check if you have these installed run `python -V` (make sure the version is python 3.X.X) and `python -m pip -V`. If you don't have these installed please read the guide below
+
+### Installing Python3 for Windows
+
+Click on the following link and open it once it's downloaded:
+
+`https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe`
+
+Once you have opened the installer, make sure that you add Python 3.8 to path. Your installer should look like this:
+
+<img align="center" src="https://i.imgur.com/SkviBw6.png">
+
+### Installing Python3 for MacOS.
+
+Click on the following link and install:
+
+`https://www.python.org/ftp/python/3.8.0/python-3.8.0-macosx10.9.pkg`
+
+### Installing Python3 for Linux
+
+Since there are a multitude of package installers for Linux, we'll choose `apt` which is used in Debian-derived distros such as Ubuntu as an example.
+
+Go to the terminal and type in the following:
+
+```shell
+sudo apt update && sudo apt upgrade
+sudo apt install -y python3 python3-pip
+```
+
+### Installing the Required Packages
+
+
+## Setup
+
+
 I decided to work on this project mainly for myself, because I wanted to see 
 
 
