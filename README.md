@@ -131,18 +131,21 @@ I then started doing research and came to the realization that it may be possibl
 
 I plan to continue updating this as I keep adding more and more features, and learn more about how websites handle data
 
-### The CAPTCHA Problem
+## The CAPTCHA Problem
 
 
-
-When I was coding this bot I was faced with. as it turns out Tiktok doesn't like it when you pull a lot of data from them, so if you send a lot of get requests to their web servers, you will be profiled as a robot and asked to complete a captcha.
+When I first started coding this bot I was faced with a big problem. As it turns out Tiktok doesn't like it when you pull a lot of data from them, so if you send a lot of get requests to their web servers, you will be profiled as a robot and asked to complete a [CAPTCHA](https://en.wikipedia.org/wiki/CAPTCHA).
 
 <img src = "https://user-images.githubusercontent.com/50222899/128652952-6a8d19a6-de15-455b-a626-0f3903b47c7d.png">
 
-Now I've seen many different solutions to this problem. Some people actually have went through the trouble of training a nueral network to solve captchas. Unfortunatly, (as much as I would love to), I do not have the neccesary resources to achieve a similar solution however, I do have my brain.
+This was bad news, a CAPTCHA is essentially a test web developers make for their users to make sure that the user is human and not a robot stealing their data. These tests usually include identifying common objects or typing letters that are played through speakers.
+
+Now I've seen many different solutions to the CAPTCHA problem. (Some people actually have went through the trouble of using [machine learning](https://medium.com/@ageitgey/how-to-break-a-captcha-system-in-15-minutes-with-machine-learning-dbebb035a710) to solve captchas). Unfortunatly, (as much as I would love to), I do not have the neccesary resources to achieve a similar solution. I do have one thing that Tiktok unfortuantly doesn't have though; **A Brain**
+
+<br>
 
 I eventually realized that Tiktok only knows you need to be verified based off of your IP. My solution? **Proxies**
 
-A quick google searched reaveled a website with a list of [free proxies](https://free-proxy-list.net/), and I then made the webscraper scrape this list of proxies, add them to a dictionary, and then choose a random one to use as a proxy whenever Tiktok asks for you to complete a captcha.
+A quick google searched reaveled a website with a list of [free proxies](https://free-proxy-list.net/), and I then made the webscraper scrape this list of proxies, add them to a dictionary, and then choose a random one to use as a proxy whenever Tiktok asks for you to complete a CAPTCHA.
 
 This may not be a solution as cool as artifical intelligence, however it's mine and I'm proud of it 
