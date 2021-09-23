@@ -95,7 +95,7 @@ Now do keep in mind that you can use this in any way in your own python scripts,
 
 ## Usage
 
-Whenever you call a function with this scraper (e.g: 
+Whenever you call a function with this scraper, for example: 
 ```python
 Tiktok.get_follwer_count('@example_user')
 ```
