@@ -12,7 +12,7 @@ Web scraping is a really important tool to learn, even if it's generally fround 
 
 I do want to preface one thing first though, I have talked to many developers about the morality behind web scraping, and learned many different opinions on if ethically it should be done. It is my belief that due to all of the data being scraped in this project's current publicly accesible state, writing a program that goes through the frontend code to scrape data goes against no moral codes. 
 
-I do agree that mass spamming requests with hundreds of IPs in an attempt to DDOS, or even just in an attempt to retreive a huge amount of data from a company's servers (especially if the company/company's servers are smaller than typical big corperation/big corperation's servers) is a blatant violation of said moral codes. However Tiktok is a $250 Billion dollar company and I am a 16 year old with a laptop.
+I do agree that mass spamming requests with hundreds of IPs in an attempt to DDOS, or even just in an attempt to retreive a huge amount of data from a company's servers (especially if the company/company's servers are smaller than typical big corperation/big corperation's servers) is a blatant violation of said moral codes. However Tiktok is a $250 Billion company and I am a 16 year old with a laptop.
 
 
 ## Table of Contents
