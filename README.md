@@ -8,9 +8,9 @@ Simple webscraping bot that has a set of methods to get specific and general inf
 
 This project was started, mainly as a way for me to practice my webscraping skills and class structure knowledge. I don't expect anyone to download this but I'm still going to write a fully fleshed out README with usage tutorials and everything for completion's sake
 
-Web scraping is a really important tool to learn, even if it's generally fround apon by companies. The problem is humans love data, which means we will stop at nothing to find ways to make data more accessible to us. Web scrapers are no exception.
+Web scraping is a really important tool to learn, even if it's generally frowned upon by many companies. The problem is humans love data, which means we will stop at nothing to find ways to make data more accessible to us. Web scrapers are no exception.
 
-I do want to preface one thing first though, I have talked to many developers about the morality behind web scraping, and learned many different opinions on if ethically it should be done. It is my belief that due to all of the data being scraped in this project's current publicly accesible state, writing a program that goes through the frontend code to scrape data goes against no moral codes. 
+I do want to preface one thing first though, I have talked to many developers about the morality behind webscraping, and learned many different opinions on the ethical dilemmas surrounding it. It is my belief that due to all of the data being scraped in this project's current publicly accesible state, writing a program that goes through the front-end code to scrape data goes against no moral codes. 
 
 I do agree that mass spamming requests with hundreds of IPs in an attempt to DDOS, or even just in an attempt to retreive a huge amount of data from a company's servers (especially if the company/company's servers are smaller than typical big corperation/big corperation's servers) is a blatant violation of said moral codes. However Tiktok is a $250 Billion company and I am a 16 year old with a laptop.
 
