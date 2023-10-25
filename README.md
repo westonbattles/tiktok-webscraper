@@ -97,7 +97,7 @@ Now do keep in mind that you can use this in any way in your own python scripts,
 
 Whenever you call a function with this scraper, for example: 
 ```python
-Tiktok.get_follwer_count('@example_user')
+Tiktok.get_follower_count('@example_user')
 ```
 the value will be returned to you.
 
@@ -108,7 +108,7 @@ For our example, we'll simply set what gets returned to us into a variable, and 
 
 
 ```python
-total_followers = Tiktok.get_follwer_count('@example_user')
+total_followers = Tiktok.get_follower_count('@example_user')
 
 print(total_followers)
 ```
@@ -141,7 +141,7 @@ When I first started coding this bot I was faced with a big problem. As it turns
 
 This was bad news, a CAPTCHA is essentially a test web developers make for their users to make sure that the user is human and not a robot stealing their data. These tests usually include identifying common objects or typing letters that are played through speakers.
 
-Now I've seen many different solutions to the CAPTCHA problem. (Some people actually have went through the trouble of using [machine learning](https://medium.com/@ageitgey/how-to-break-a-captcha-system-in-15-minutes-with-machine-learning-dbebb035a710) to solve captchas). Unfortunatly, (as much as I would love to), I do not have the neccesary resources to achieve a similar solution. I do have one thing that Tiktok unfortuantly doesn't have though; **A Brain**
+Now I've seen many different solutions to the CAPTCHA problem. (Some people actually have went through the trouble of using [machine learning](https://medium.com/@ageitgey/how-to-break-a-captcha-system-in-15-minutes-with-machine-learning-dbebb035a710) to solve captchas). Unfortunately, (as much as I would love to), I do not have the neccesary resources to achieve a similar solution. I do have one thing that Tiktok unfortuantly doesn't have though; **A Brain**
 
 <br>
 
